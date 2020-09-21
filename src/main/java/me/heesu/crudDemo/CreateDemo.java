@@ -1,9 +1,10 @@
 package me.heesu.crudDemo;
 
+import me.heesu.config.BaseDemo;
 import me.heesu.entity.User;
 import org.hibernate.Session;
 
-public class CreateDemo extends BaseDemo{
+public class CreateDemo extends BaseDemo {
 
     public static void main(String[] args){
         Session session = getSession();

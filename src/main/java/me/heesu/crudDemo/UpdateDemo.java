@@ -1,5 +1,6 @@
 package me.heesu.crudDemo;
 
+import me.heesu.config.BaseDemo;
 import me.heesu.entity.User;
 import org.hibernate.Session;
 
