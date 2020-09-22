@@ -1,5 +1,6 @@
 package me.heesu.config;
 
+import me.heesu.entity.Course;
 import me.heesu.entity.Instructor;
 import me.heesu.entity.InstructorDtl;
 import me.heesu.entity.User;
@@ -19,6 +20,7 @@ public class BaseDemo{
                 .addAnnotatedClass(User.class)
                 .addAnnotatedClass(Instructor.class)
                 .addAnnotatedClass(InstructorDtl.class)
+                .addAnnotatedClass(Course.class)
                 .buildSessionFactory();
 
         //create session
