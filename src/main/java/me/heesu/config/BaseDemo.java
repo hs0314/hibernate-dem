@@ -1,9 +1,6 @@
 package me.heesu.config;
 
-import me.heesu.entity.Course;
-import me.heesu.entity.Instructor;
-import me.heesu.entity.InstructorDtl;
-import me.heesu.entity.User;
+import me.heesu.entity.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -21,6 +18,7 @@ public class BaseDemo{
                 .addAnnotatedClass(Instructor.class)
                 .addAnnotatedClass(InstructorDtl.class)
                 .addAnnotatedClass(Course.class)
+                .addAnnotatedClass(Review.class)
                 .buildSessionFactory();
 
         //create session

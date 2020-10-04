@@ -31,7 +31,8 @@ public class Instructor {
     private InstructorDtl instructorDtl;
 
     // Instructor - Course 에 cascade delete가 적용되지 않도록 한다.
-    @OneToMany(mappedBy = "instructor",  // Course class 의 instructor property와 매핑
+    @OneToMany(fetch=FetchType.LAZY,
+            mappedBy = "instructor",  // Course class 의 instructor property와 매핑
             cascade={CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private List<Course> courses;
 
