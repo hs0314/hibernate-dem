@@ -1,11 +1,11 @@
-package me.heesu.aop;
+package me.heesu.aop.aspect;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
-@Aspect
+//@Aspect
 @Component
 public class BasicAspect {
     //logging관련된 advices를 모두 관리
