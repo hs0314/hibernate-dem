@@ -41,10 +41,19 @@ public class aopTest {
 
         /**
          * @AfterReturning advice test
-          */
+         */
         List<Course> courses = dao.getCourses();
         System.out.println("##### getCourses() course List : " + courses.toString());
 
+        /**
+         * @AfterThrowing advice test
+         */
+        try{
+            // 일부러 exception을 발생시켜서 @AfterThrowing Advice를 테스트
+            dao.getException();
+        }catch(Exception e){
+            System.out.println("##### Main() catch Exception! #### : " + e.getMessage());
+        }
 
         context.close();
     }

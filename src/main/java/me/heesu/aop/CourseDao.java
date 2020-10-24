@@ -31,4 +31,8 @@ public class CourseDao {
 
         return courses;
     }
+
+    public void getException(){
+        throw new RuntimeException("#### throw new expcetion from CourseDao.generateException()!! ####");
+    }
 }
